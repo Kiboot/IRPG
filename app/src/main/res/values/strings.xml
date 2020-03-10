@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">InheritanceRPG</string>
+
+    <string-array name="HeroClass">
+        <item>Sniper</item>
+        <item>Medic</item>
+        <item>Guard</item>
+        <item>Vanguard</item>
+        <item>Caster</item>
+    </string-array>
+
+    <string-array name="Snipersubcalss">
+        <item>Crossbow</item>
+        <item>Bazooka</item>
+    </string-array>
+    <string-array name="Medic">
+        <item>holgrammer</item>
+        <item>Bazooka</item>
+    </string-array>
+    <string-array name="Guard">
+        <item>ibangshield</item>
+        <item>hologram</item>
+    </string-array>
+    <string-array name="Vanguard">
+        <item>Rocketer</item>
+        <item>defensewithbazook</item>
+    </string-array>
+    <string-array name="Caster">
+        <item>sub1</item>
+        <item>sub2</item>
+    </string-array>
+
+
+
+
+
+
+
+
+</resources>
