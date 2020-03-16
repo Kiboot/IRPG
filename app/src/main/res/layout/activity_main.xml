@@ -227,11 +227,27 @@
         app:layout_constraintTop_toBottomOf="@+id/leveltyope"
         app:layout_constraintVertical_bias="0.166" />
 
+
+    <Button
+        android:id="@+id/rodrone"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/earthorbiter"
+        android:text="View Stats"
+        android:textColor="#000000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <Button
         android:id="@+id/fdrone"
         android:layout_width="160dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/button"
         android:fontFamily="@font/earthorbiter"
         android:text="View Stats"
@@ -256,14 +272,13 @@
         app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.965" />
-
+        app:layout_constraintVertical_bias="0.976" />
 
     <Button
         android:id="@+id/maldroneeee"
         android:layout_width="160dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/button"
         android:fontFamily="@font/earthorbiter"
         android:text="View Stats"
@@ -271,7 +286,7 @@
         android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -286,22 +301,7 @@
         android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/rodrone"
-        android:layout_width="160dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/button"
-        android:fontFamily="@font/earthorbiter"
-        android:text="View Stats"
-        android:textColor="#000000"
-        android:typeface="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
@@ -715,10 +715,10 @@
         app:fontFamily="@font/clio"
         app:layout_constraintBottom_toTopOf="@+id/Class"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintHorizontal_bias="0.122"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.161" />
+        app:layout_constraintVertical_bias="0.234" />
 
     <ImageView
         android:id="@+id/bordering"

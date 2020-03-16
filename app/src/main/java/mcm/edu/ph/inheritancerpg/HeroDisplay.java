@@ -64,7 +64,7 @@ public class HeroDisplay extends AppCompatActivity {
 
         if (pangkuha == 1) {
 
-            Bazooka crossbow = new Bazooka(01, 300, 10, 200, 0, 30, 20, "Sniper", 1, 50, 100, 0, 55, 1, 1);
+            Bazooka crossbow = new Bazooka(01, 300, 10, 200, 0, 30, 20, "Sniper", 0, 50, 100, 0, 55, 1, 1);
             crossbow.getHpoints();
             crossbow.getMpoints();
             crossbow.getPatk();
@@ -160,7 +160,7 @@ public class HeroDisplay extends AppCompatActivity {
             TextView bizdix;
 
 
-            hologrammer bazik = new hologrammer(01, 300, 10, 450, 0, 30, 20, "Sniper", 1, 50, 70, 0, 55, 1, 1);
+            hologrammer bazik = new hologrammer(01, 300, 10, 450, 0, 30, 20, "Sniper",0, 50, 70, 0, 55, 1, 1);
             bazik.getHpoints();
             bazik.getMpoints();
             bazik.getPatk();
@@ -619,7 +619,7 @@ public class HeroDisplay extends AppCompatActivity {
 
             //Setters
             cleys.setText("Amias");
-            livil.setText("Vanguard | Lvl: " + Math.round(lebelnasad));
+            livil.setText("V.Guard | Lvl: " + Math.round(lebelnasad));
             mainclass.setText("''Rocket Bot''");
             gerome.setText("HP: " + Math.round(chealth));
             manap.setText("MP: " + Math.round(mpoints));
@@ -694,7 +694,7 @@ public class HeroDisplay extends AppCompatActivity {
 
             //Setters
             cleys.setText("Amias");
-            livil.setText("Vanguard | Lvl: " + Math.round(lebelnasad));
+            livil.setText("V.Guard | Lvl: " + Math.round(lebelnasad));
             mainclass.setText("''Ultra Destruction''");
             gerome.setText("HP: " + Math.round(chealth));
             manap.setText("MP: " + Math.round(mpoints));
@@ -903,9 +903,10 @@ public class HeroDisplay extends AppCompatActivity {
             baseintel.setVisibility(View.GONE);
             bagie.setVisibility(View.GONE);
             strgr.setVisibility(View.GONE);
+            chardis.setImageResource(R.drawable.dronered);
 
             //Setters
-            cleys.setText("HyperActive Drone");
+            cleys.setText("H.Drone");
             livil.setText("Drone | Lvl: " + ((lebelnasad)));
             gerome.setText("HP: " + Math.round(chealth));
             manap.setText("MP: " + Math.round(mpoints));
@@ -961,9 +962,10 @@ public class HeroDisplay extends AppCompatActivity {
             baseintel.setVisibility(View.GONE);
             bagie.setVisibility(View.GONE);
             strgr.setVisibility(View.GONE);
+            chardis.setImageResource(R.drawable.dronegr);
 
             //Setters
-            cleys.setText("Roaming Drone");
+            cleys.setText("R.Drone");
             livil.setText("Drone | Lvl: " + ((lebelnasad)));
             gerome.setText("HP: " + Math.round(chealth));
             manap.setText("MP: " + Math.round(mpoints));
@@ -1019,9 +1021,10 @@ public class HeroDisplay extends AppCompatActivity {
             baseintel.setVisibility(View.GONE);
             bagie.setVisibility(View.GONE);
             strgr.setVisibility(View.GONE);
+            chardis.setImageResource(R.drawable.droneblu);
 
             //Setters
-            cleys.setText("Fighting Drone");
+            cleys.setText("F.Drone");
             livil.setText("Drone | Lvl: " + ((lebelnasad)));
             gerome.setText("HP: " + Math.round(chealth));
             manap.setText("MP: " + Math.round(mpoints));
@@ -1076,10 +1079,11 @@ public class HeroDisplay extends AppCompatActivity {
 
             baseintel.setVisibility(View.GONE);
             bagie.setVisibility(View.GONE);
-            strgr.setVisibility(View.GONE);
+            strgr.setVisibility(View.GONE); chardis.setImageResource(R.drawable.droneyellow);
+
 
             //Setters
-            cleys.setText("HyperActive Drone");
+            cleys.setText("S.Drone");
             livil.setText("Drone | Lvl: " + ((lebelnasad)));
             gerome.setText("HP: " + Math.round(chealth));
             manap.setText("MP: " + Math.round(mpoints));
@@ -1135,9 +1139,10 @@ public class HeroDisplay extends AppCompatActivity {
             baseintel.setVisibility(View.GONE);
             bagie.setVisibility(View.GONE);
             strgr.setVisibility(View.GONE);
+            chardis.setImageResource(R.drawable.dronebro);
 
             //Setters
-            cleys.setText("HyperActive Drone");
+            cleys.setText("M.Drone");
             livil.setText("Drone | Lvl: " + ((lebelnasad)));
             gerome.setText("HP: " + Math.round(chealth));
             manap.setText("MP: " + Math.round(mpoints));

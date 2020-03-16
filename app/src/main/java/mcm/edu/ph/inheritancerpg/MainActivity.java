@@ -257,6 +257,7 @@ mons = findViewById(R.id.Monster);
                             surdrone.setVisibility(View.GONE);
                             maldrone.setVisibility(View.GONE);
                             mons.setVisibility(View.GONE);
+                            dipleh.setVisibility(View.GONE);
 
 
                         }
@@ -321,7 +322,7 @@ mons = findViewById(R.id.Monster);
 
 
                         if (mnstr.equals("HyperActive Drone")){
-
+                            title.setVisibility(View.GONE);
                             hypdrone.setVisibility(View.VISIBLE);
                             romdrone.setVisibility(View.GONE);
                             paytdrone.setVisibility(View.GONE);
@@ -332,8 +333,8 @@ mons = findViewById(R.id.Monster);
                             paytdronee.setVisibility(View.GONE);
                             surdronee.setVisibility(View.GONE);
                             maldronee.setVisibility(View.GONE);
-                            dipleh.setVisibility(View.GONE);
-                            dipleh.setImageResource(R.drawable.prevsniper);
+                            dipleh.setVisibility(View.VISIBLE);
+                            dipleh.setImageResource(R.drawable.droneborderred);
                             hypdronee.setOnClickListener(
 
                                     new View.OnClickListener() {
@@ -363,12 +364,14 @@ mons = findViewById(R.id.Monster);
                             paytdrone.setVisibility(View.GONE);
                             surdrone.setVisibility(View.GONE);
                             maldrone.setVisibility(View.GONE);
+                            title.setVisibility(View.GONE);
                             hypdronee.setVisibility(View.GONE);
                             romdronee.setVisibility(View.VISIBLE);
                             paytdronee.setVisibility(View.GONE);
                             surdronee.setVisibility(View.GONE);
                             maldronee.setVisibility(View.GONE);
-                            dipleh.setVisibility(View.GONE);
+                            dipleh.setVisibility(View.VISIBLE);
+                            dipleh.setImageResource(R.drawable.dronebordergr);
                             romdronee.setOnClickListener(
                                     new View.OnClickListener() {
                                         @Override
@@ -399,12 +402,15 @@ mons = findViewById(R.id.Monster);
                             paytdrone.setVisibility(View.VISIBLE);
                             surdrone.setVisibility(View.GONE);
                             maldrone.setVisibility(View.GONE);
+                            title.setVisibility(View.GONE);
                             hypdronee.setVisibility(View.GONE);
                             romdronee.setVisibility(View.GONE);
                             paytdronee.setVisibility(View.VISIBLE);
                             surdronee.setVisibility(View.GONE);
                             maldronee.setVisibility(View.GONE);
-                            dipleh.setVisibility(View.GONE);
+
+                            dipleh.setVisibility(View.VISIBLE);
+                            dipleh.setImageResource(R.drawable.droneborderblu);
                             paytdronee.setOnClickListener(
 
                                     new View.OnClickListener() {
@@ -437,12 +443,15 @@ mons = findViewById(R.id.Monster);
                             paytdrone.setVisibility(View.GONE);
                             surdrone.setVisibility(View.VISIBLE);
                             maldrone.setVisibility(View.GONE);
+                            title.setVisibility(View.GONE);
                             hypdronee.setVisibility(View.GONE);
                             romdronee.setVisibility(View.GONE);
                             paytdronee.setVisibility(View.GONE);
                             surdronee.setVisibility(View.VISIBLE);
                             maldronee.setVisibility(View.GONE);
                             dipleh.setVisibility(View.GONE);
+                            dipleh.setVisibility(View.VISIBLE);
+                            dipleh.setImageResource(R.drawable.droneborderyel);
                             surdronee.setOnClickListener(
                                     new View.OnClickListener() {
                                         @Override
@@ -473,12 +482,14 @@ mons = findViewById(R.id.Monster);
                             paytdrone.setVisibility(View.GONE);
                             surdrone.setVisibility(View.GONE);
                             maldrone.setVisibility(View.VISIBLE);
+                            title.setVisibility(View.GONE);
                             hypdronee.setVisibility(View.GONE);
                             romdronee.setVisibility(View.GONE);
                             paytdronee.setVisibility(View.GONE);
                             surdronee.setVisibility(View.GONE);
                             maldronee.setVisibility(View.VISIBLE);
-                            dipleh.setVisibility(View.GONE);
+                            dipleh.setVisibility(View.VISIBLE);
+                            dipleh.setImageResource(R.drawable.droneborderbro);
                             maldrone.setOnClickListener(
                                     new View.OnClickListener() {
                                         @Override
