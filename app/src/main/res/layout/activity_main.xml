@@ -3,63 +3,734 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/anbg"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Spinner
-        android:id="@+id/spinner3"
-        android:layout_width="213dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <ImageView
+        android:id="@+id/bazooka"
+        android:layout_width="235dp"
+        android:layout_height="219dp"
+        android:layout_marginBottom="88dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/nameview"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/crossbow" />
+
+
+    <Spinner
+        android:id="@+id/roles"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="8dp"
+        android:entries="@array/Role"
+        android:soundEffectsEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/Class"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameview"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <TextView
+        android:id="@+id/nameview"
+        android:layout_width="362dp"
+        android:layout_height="67dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="15dp"
+        app:fontFamily="@font/stars"
+        app:layout_constraintBottom_toTopOf="@+id/Class"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395" />
+        app:layout_constraintVertical_bias="0.813" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="213dp"
-        android:layout_height="50dp"
+    <Button
+        android:id="@+id/viewstatsdroner"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/earthorbiter"
+        android:gravity="center"
+        android:text="View Stats"
+        android:textColor="#000000"
+        android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/leveltyope"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <Button
+        android:id="@+id/viewstatsshieldwithbazooka"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/earthorbiter"
+        android:gravity="center"
+        android:text="View Stats"
+        android:textColor="#000000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leveltyope"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <Button
+        android:id="@+id/viewstatsrocketlauncher"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/earthorbiter"
+        android:gravity="center"
+        android:text="View Stats"
+        android:textColor="#000000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leveltyope"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <Button
+        android:id="@+id/viewstatsskin1"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/earthorbiter"
+        android:gravity="center"
+        android:text="View Stats"
+        android:textColor="#000000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leveltyope"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <Button
+        android:id="@+id/viewstatsholoshield"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/earthorbiter"
+        android:gravity="center"
+        android:text="View Stats"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leveltyope"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <Button
+        android:id="@+id/viewstatsskin2"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/earthorbiter"
+        android:gravity="center"
+        android:text="View Stats"
+        android:textColor="#000000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leveltyope"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <Button
+        android:id="@+id/viewstats"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/earthorbiter"
+        android:gravity="center"
+        android:text="View Stats"
+        android:textColor="#000000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leveltyope"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <Button
+        android:id="@+id/viewstatsbaz"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/earthorbiter"
+        android:gravity="center"
+        android:text="View Stats"
+        android:textColor="#000000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leveltyope"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <Button
+        android:id="@+id/viewstatsholo"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/earthorbiter"
+        android:gravity="center"
+        android:text="View Stats"
+        android:textColor="#000000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leveltyope"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <Button
+        android:id="@+id/viewstatsprimshield"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/earthorbiter"
+        android:gravity="center"
+        android:text="View Stats"
+        android:textColor="#000000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leveltyope"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <Button
+        android:id="@+id/fdrone"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/earthorbiter"
+        android:text="View Stats"
+        android:textColor="#000000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/sudrone"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/earthorbiter"
+        android:text="View Stats"
+        android:textColor="#000000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965" />
+
+
+    <Button
+        android:id="@+id/maldroneeee"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/earthorbiter"
+        android:text="View Stats"
+        android:textColor="#000000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/hidrone"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/earthorbiter"
+        android:text="View Stats"
+        android:textColor="#000000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/rodrone"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/earthorbiter"
+        android:text="View Stats"
+        android:textColor="#000000"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/Monster"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/Monster"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roles"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/medicsub"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:entries="@array/Medic"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <Spinner
+        android:id="@+id/guardsub"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:entries="@array/Guard"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <Spinner
+        android:id="@+id/castersub"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:entries="@array/Caster"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <Spinner
+        android:id="@+id/snipersub"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:entries="@array/Snipersubcalss"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <Spinner
+        android:id="@+id/vanguardsub"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:entries="@array/Vanguard"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
 
     <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/caster1"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
         android:ems="10"
         android:hint="Level"
         android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.616" />
+        app:layout_constraintVertical_bias="0.903" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="496dp"
-        android:text="Button"
+    <EditText
+        android:id="@+id/hologramin"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="Level"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="214dp"
-        android:layout_height="61dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/spinner3"
+    <EditText
+        android:id="@+id/dronein"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="Level"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
+
+    <EditText
+        android:id="@+id/hologuardin"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="Level"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
+
+    <EditText
+
+        android:id="@+id/caster2"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="Level"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
+
+    <EditText
+        android:id="@+id/bazookwshieldin"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="Level"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
+
+    <EditText
+        android:id="@+id/ibangshieldin"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="Level"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
+
+    <EditText
+        android:id="@+id/leveltypebaz"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="Level"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
+
+    <EditText
+        android:id="@+id/leveltyope"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="Level"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
+
+    <EditText
+        android:id="@+id/rocketin"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="Level"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.903" />
+
+    <EditText
+
+        android:id="@+id/Fightingdrone"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Level"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Monster"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+
+        android:id="@+id/surveillancedron"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Level"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Monster"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+
+        android:id="@+id/hyperactdrone"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Level"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Monster"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+
+        android:id="@+id/roamingdrone"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Level"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Monster"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+
+        android:id="@+id/maldrone"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Level"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Monster"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/Class"
+        style="@style/spinnerItemStyle"
+        android:layout_width="224dp"
+        android:layout_height="68dp"
+        android:entries="@array/HeroClass"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
+
+    <ImageView
+        android:id="@+id/crossbow"
+        android:layout_width="232dp"
+        android:layout_height="224dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/nameview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bazooka" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="280dp"
+        android:layout_height="101dp"
+        android:gravity="center"
+        android:text="Inheritance RPG"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30dp"
+        app:fontFamily="@font/clio"
+        app:layout_constraintBottom_toTopOf="@+id/Class"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.908" />
+        app:layout_constraintVertical_bias="0.161" />
+
+    <ImageView
+        android:id="@+id/bordering"
+        android:layout_width="596dp"
+        android:layout_height="270dp"
+        app:layout_constraintBottom_toTopOf="@+id/nameview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bords" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

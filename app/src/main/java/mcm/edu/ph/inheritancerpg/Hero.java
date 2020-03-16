@@ -6,7 +6,7 @@ public class Hero extends Characters {
     private int heroid;
     private String cles;
     private int level;
-    private double basetre, baseagi, baseintel, exp;
+    private double basetre, baseagi, baseintel, basedex, exp;
     private double strGrowth, agiGrowth, intgrowth;
     private double evasion;
 
@@ -26,6 +26,10 @@ public class Hero extends Characters {
         this.intgrowth = intgrowth;
 
 
+
+    }
+
+    public Hero(int is, double hpoints, double mpoints, double patk, double matk, double pdef, double mdef) {
     }
 
     //parent local getters and setters
@@ -159,6 +163,9 @@ public class Hero extends Characters {
         this.heroid = heroid;
     }
 
+    public double getBasedex() {
+        return basedex;
+    }
 
     public void setAgiGrowth(double agiGrowth) {
         this.agiGrowth = agiGrowth;
@@ -190,6 +197,10 @@ public class Hero extends Characters {
 
     public double getEvasion() {
         return evasion;
+    }
+
+    public void setBasedex(double basedex) {
+        this.basedex = basedex;
     }
     //methods
 
@@ -266,4 +277,6 @@ public class Hero extends Characters {
 
     public Hero(){}
 
+    public void getHpoints(double v) {
+    }
 }

@@ -2,38 +2,53 @@
     <string name="app_name">InheritanceRPG</string>
 
     <string-array name="HeroClass">
+        <item>Select a Class</item>
         <item>Sniper</item>
         <item>Medic</item>
         <item>Guard</item>
         <item>Vanguard</item>
         <item>Caster</item>
+
     </string-array>
 
     <string-array name="Snipersubcalss">
-        <item>Crossbow</item>
-        <item>Bazooka</item>
+        <item>Select a Skin</item>
+        <item>Crossbow (+30 Agi)</item>
+        <item>Bazooka (+150 P.Atk, -30 Agi) </item>
     </string-array>
-    <string-array name="Medic">
-        <item>holgrammer</item>
-        <item>Bazooka</item>
+    <string-array name = "Medic">
+        <item>Select a Skin</item>
+        <item>Hologram Screen (+260 Agi)</item>
+        <item>Drone Care (+100 P.Def)</item>
     </string-array>
     <string-array name="Guard">
-        <item>ibangshield</item>
-        <item>hologram</item>
+        <item>Select a Skin</item>
+        <item>UltraShield (+150 HP)</item>
+        <item>HoloShield (-150 HP, +50 Agi)</item>
     </string-array>
     <string-array name="Vanguard">
-        <item>Rocketer</item>
-        <item>defensewithbazook</item>
+        <item>Select a Skin</item>
+        <item>Rocket Bot (+60 Agi) </item>
+        <item>Ultra Destruction (+270 P.Atk, -60 Agi) </item>
     </string-array>
     <string-array name="Caster">
-        <item>sub1</item>
-        <item>sub2</item>
+        <item>Select a Skin</item>
+        <item>Modern Caster (+30 Agi)</item>
+        <item>Ultra Suit (+100 M.Atk, +150 P.Def) </item>
     </string-array>
-
-
-
-
-
+    <string-array name="Role">
+        <item> Select a Role </item>
+        <item> Hero </item>
+        <item> Monster </item>
+    </string-array>
+    <string-array name="Monster">
+        <item> Select a Monster </item>
+        <item> HyperActive Drone </item>
+        <item> Roaming Drone </item>
+        <item> Fighting Drone </item>
+        <item> Surveillance Drone </item>
+        <item> Malfunctioned Drone </item>
+    </string-array>
 
 
 
