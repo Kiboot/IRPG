@@ -1358,7 +1358,7 @@ mons = findViewById(R.id.Monster);
                     }
                 }
         );
-
+//gerome
 
 
 
