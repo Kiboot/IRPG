@@ -83,6 +83,6 @@ public class Characters {
     }
 
 
-    public Characters(){}
 
+    public Characters(){}
 }
